@@ -1,0 +1,15 @@
+/* Questi token definiscono i font generati dalle classi font-sans e font-mono. */
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+/* Il brand riusa il violetto di Tailwind: non duplichiamo i valori dei colori. */
+@theme inline {
+  --color-brand-600: var(--color-violet-600);
+  --color-brand-700: var(--color-violet-700);
+}

@@ -1,0 +1,3 @@
+/* Tailwind fornisce reset e classi utility; il tema aggiunge i token del progetto. */
+@import "tailwindcss";
+@import "./theme.css";
