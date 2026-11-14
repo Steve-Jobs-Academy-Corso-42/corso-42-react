@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const Counter = () => {
-  // Lo stato appartiene a questo componente: quando cambia, React lo ridisegna.
+  // Stato locale: il contatore è indipendente dagli altri componenti.
   const [count, setCount] = useState(0);
 
-  // La funzione riceve il valore più recente, utile anche con aggiornamenti ravvicinati.
+  // La forma funzionale calcola il nuovo valore partendo sempre dallo stato più recente.
   const increment = () => setCount((currentCount) => currentCount + 1);
 
   return (
